@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Dense";
+    src: url("Dense-Regular.otf");
+}
+
+body {
+    font-family: "Dense";
+    background-color: white
+}
+
+.topher {
+    background:#17a2b8;
+    position: fixed;
+    height: 100%;   
+}
+
+ul {
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+li a {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+li {
+    margin-top: 10px;
+}
+
+li a:hover {
+    color: #284942;
+    background-color: white;
+    transition-duration: .3s;
+    /* border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%; */
+}
+
+.active {
+    color: #284942;
+    background-color: white;
+    /* border-top-left-radius: 50%;
+    border-bottom-left-radius: 50% */
+}
+
+
+hr {
+    border-color: rgba(255, 255, 255, 0.65);
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    margin-left: 130px;
+  
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro h1 {
+    font-size: 80px;
+}
+
+.intro span {
+    font-size: 40px;
+}
+
+
