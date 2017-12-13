@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Header from './Header';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Home';
 import './Design.css';
+
+import Nav from './Nav';
 
 class Layout extends Component {
     constructor(){
@@ -46,8 +47,14 @@ class Layout extends Component {
         return ( 
             <Router>
                 <div>
-                    <Header headerComponents = {this.titles} />
-                    <Route path="/:path" component= {Paths} />
+                    <Nav 
+                        navitem = {this.titles} 
+                    />
+                    <div className="page-content-wrapper">
+                        <div className="container">
+                            <Route path="/:path" component= {Paths} />
+                        </div>
+                    </div>
                 </div>
             </Router>
         );
@@ -56,11 +63,10 @@ class Layout extends Component {
 
 const Paths = ({ match }) => {
     
-    if(match.params.path == "home")
+    if(match.params.path === "home")
     {
-     
         return (
-            <Home title = "Hello"/>
+            <Home title = "Hi!"/>
         );
     } else {
         return (

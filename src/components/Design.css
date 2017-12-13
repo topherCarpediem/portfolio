@@ -1,15 +1,15 @@
-@font-face {
+/* @font-face {
     font-family: "Dense";
     src: url("Dense-Regular.otf");
 }
 
 body {
-    font-family: "Dense";
-    background-color: white
+    font-family: 'Quicksand', sans-serif;
+    background-color: black
 }
 
 .topher {
-    background:#17a2b8;
+    background:rgb(20, 20, 20);
     position: fixed;
     height: 100%;   
 }
@@ -31,18 +31,16 @@ li {
 }
 
 li a:hover {
-    color: #284942;
+    color: #000000;
     background-color: white;
     transition-duration: .3s;
-    /* border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%; */
+
 }
 
 .active {
-    color: #284942;
+    color: #000000;
     background-color: white;
-    /* border-top-left-radius: 50%;
-    border-bottom-left-radius: 50% */
+
 }
 
 
@@ -53,9 +51,84 @@ hr {
     padding: 0;
 }
 
-.container-fluid {
-    margin-left: 130px;
-  
+.intro {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro #proffesion {
+    font-size: 50px;
+    color: #2BA1B9
+}
+.intro #name {
+    font-size: 80px;
+    color: #EFEFCD
+}
+
+.intro span {
+    font-size: 40px;
+}
+.contact-me {
+    padding: 3px;
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-color: white;
+    color: white;
+    background-color: black;
+}
+
+.contact-me:hover {
+    color: #2BA1B9;
+    border-color: #2BA1B9;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+ */
+
+ body {
+     overflow-x: hidden;
+     
+     background-color: rgb(5, 7, 7);
+     font-family: 'Quicksand', sans-serif;
+ }
+
+
+.sidebar-nav-wrapper {
+    background:black;     
+    height: 100%;
+    position: fixed;
+}
+
+.sidebar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+.sidebar-nav-item {
+    text-decoration-style: none;
+    font-size: 2.5em;
+    text-align: center;
+   
+}
+.sidebar-nav-item a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.sidebar-nav-item a:hover {
+    color: white;
+    background-color: #2BA1B9;
+    transition-duration: .3s;
+}
+.page-content-wrapper {
+    padding-left: 100px;
+    
 }
 
 .intro {
@@ -64,12 +137,89 @@ hr {
     transform: translateY(-50%);
 }
 
-.intro h1 {
+.intro #proffesion {
+    font-size: 50px;
+    color: #2BA1B9
+}
+.intro #name {
     font-size: 80px;
+    color: #EFEFCD
 }
 
 .intro span {
     font-size: 40px;
 }
+.contact-me {
+    padding: 3px;
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-color: white;
+    color: white;
+    background-color: black;
+}
+
+.contact-me:hover {
+    color: #2BA1B9;
+    border-color: #2BA1B9;
+    transition-duration: 1s;
+    cursor: pointer;
+}
 
 
+@media screen and (max-width: 500px) and (min-width: 250px) {
+    .page-content-wrapper {
+        padding-left: 0;
+    }
+
+    .sidebar-nav-wrapper {
+        position: relative;
+    }
+
+    .sidebar-nav {
+        list-style-type: none;
+        position: relative;
+        text-align: center;
+        -webkit-transform: none;
+        transform: none;
+    }
+    .sidebar-nav-item {
+        font-size: 2em;
+        display: inline-block;
+    }
+   
+    .sidebar-nav-item a {
+        color: white;
+        position: relative;
+        padding: 10px;
+    }
+
+    .intro {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        
+    }
+
+    .intro #proffesion {
+        font-size: 30px;
+        color: #2BA1B9
+    }
+    .intro #name {
+        font-size: 50px;
+        color: #EFEFCD
+    }
+    
+    .intro span {
+        font-size: 20px;
+    }
+
+    .contact-me {
+        font-size: 10px;
+        padding: 3px;
+        border-radius: 5px;
+        border-width: 0.5px;
+        border-color: white;
+        color: white;
+        background-color: black;
+    }
+}
