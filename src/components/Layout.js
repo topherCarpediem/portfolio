@@ -5,6 +5,7 @@ import Home from './Home';
 import './Design.css';
 
 import Nav from './Nav';
+import About from './About';
 
 class Layout extends Component {
     constructor(){
@@ -41,7 +42,6 @@ class Layout extends Component {
                 id: "achievements-tab"
             },
         ]
-        
     }
     render(){
         return ( 
@@ -67,6 +67,10 @@ const Paths = ({ match }) => {
     {
         return (
             <Home title = "Hi!"/>
+        );
+    } else if(match.params.path === "me") {
+        return (
+            <About />
         );
     } else {
         return (

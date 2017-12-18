@@ -87,10 +87,13 @@ hr {
  */
 
  body {
-     overflow-x: hidden;
-     
+     overflow: hidden;
+     background-image: url("../drawing5.svg");
+     background-repeat: no-repeat;
+     background-position: 76% -5%;
      background-color: rgb(5, 7, 7);
-     font-family: 'Quicksand', sans-serif;
+     font-family: 'Quicksand', sans-serif; 
+     background-size: 45%;
  }
 
 
@@ -122,7 +125,7 @@ hr {
 }
 
 .sidebar-nav-item a:hover {
-    color: white;
+    color: black;
     background-color: #2BA1B9;
     transition-duration: .3s;
 }
@@ -139,10 +142,10 @@ hr {
 
 .intro #proffesion {
     font-size: 50px;
-    color: #2BA1B9
+    color: rgb(43, 161, 185)
 }
 .intro #name {
-    font-size: 80px;
+    font-size: 100px;
     color: #EFEFCD
 }
 
@@ -150,12 +153,14 @@ hr {
     font-size: 40px;
 }
 .contact-me {
-    padding: 3px;
-    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
     border-width: 0.5px;
     border-color: white;
     color: white;
     background-color: black;
+    margin-right: 10px;
 }
 
 .contact-me:hover {
@@ -167,6 +172,10 @@ hr {
 
 
 @media screen and (max-width: 500px) and (min-width: 250px) {
+    body {
+        background-size: 70%;
+        background-position: 134% -91%;
+    }
     .page-content-wrapper {
         padding-left: 0;
     }
@@ -198,6 +207,7 @@ hr {
         top: 50%;
         transform: translateY(-50%);
         
+        
     }
 
     .intro #proffesion {
@@ -215,11 +225,18 @@ hr {
 
     .contact-me {
         font-size: 10px;
-        padding: 3px;
         border-radius: 5px;
         border-width: 0.5px;
         border-color: white;
         color: white;
         background-color: black;
+ 
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1368px){
+    body {
+        background-size: 37%;
+        background-position: 69% -7%;
     }
 }
